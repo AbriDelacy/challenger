@@ -1,0 +1,82 @@
+<html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+<body>
+	<div class="thebigchallenger">
+		<div class="wrapper">
+			<span id="challengeMe">Das sollten wir auf jeden Fall nochmal challengen!</span><br>
+			<button onClick="challengerRun();" id="changeQuote">Challenge!</button>
+		</div>
+	</div>
+<script>
+    var quotes = [
+    "Eine App in Java bauen? Die Idee finde ich ganz gut.", 
+    "Wir sind da gerade dran.", 
+    "Wie sieht es eigentlich mit Security aus?", 
+    "Das sollten wir auf jeden Fall nochmal challengen!", 
+    "Wir überlegen uns da was.",
+    "Da sollten wir die anderen mit an Board holen.",
+    "Das wird super!",
+    "Das müssen wir mit dem Business klären.",
+    "Können wir das nicht mit Cloudflare machen?",
+    "Lasst uns mal schauen, was es da für Tools gibt.",
+    "Das ist ein super Feature!",
+    "Das kann doch auch eine Agentur machen oder?",
+    "Wir prüfen das gerade.",
+    "Ich denke da könnte uns ein Tool mit helfen.",
+    "Na klar, nehmt die Requirements doch einfach von Magento.",
+    "Cool - dann lass uns das so machen!",
+    "Kann man da nicht Cloudflare nehmen?",
+    "Ich denke das wird gut!",
+    "Wir müssen das nochmal challengen.",
+    "Lasst uns das nochmal in einem Extra-Meeting besprechen."
+    ];
+
+    function challengerRun() {
+    var index = Math.floor((Math.random() * quotes.length)); 
+    document.getElementById('challengeMe').innerHTML = quotes[index];
+	}
+</script>
+
+<style>
+button {
+    width: 200px;
+    height: 50px;
+    background: #02DDB5;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+button:hover {
+	cursor:pointer;
+}
+body {
+	width:100vw;
+	height:100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+#challengeMe {
+	font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3b3b3b;
+}
+.thebigchallenger {
+	margin:0 auto;
+	text-align:center;
+  	height:100vh;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: center;
+  	align-items: center;
+}
+.wrapper {
+	max-width:70vw;
+	margin:0 auto;
+}
+
+</style>
+
+</body>
+</html>
